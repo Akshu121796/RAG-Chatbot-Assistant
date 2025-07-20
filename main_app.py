@@ -1,6 +1,10 @@
 ## functional dependencies
 import time
 import streamlit as st
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 
 ## initializing the UI
 st.set_page_config(page_title="RAG-Based Legal Assistant")
