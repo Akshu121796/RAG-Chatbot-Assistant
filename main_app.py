@@ -22,7 +22,7 @@ env_path = Path(r"C:\Users\AKSHATA\RAG-based-Legal-Assistant\.env.txt")
 load_dotenv(env_path, override=True)  # loads .env into environment
 print("GROQ_API_KEY: ",os.getenv("GROQ_API_KEY"))
 
- chatmodel = st.secrets["GROQ_API_KEY"]
+chatmodel = st.secrets["GROQ_API_KEY"]
 
 
 ## LangChain dependencies
